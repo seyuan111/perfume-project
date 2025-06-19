@@ -6,26 +6,26 @@ import { FaRegCircleUser } from 'react-icons/fa6';
 
 const NavBar = () => {
   return (
-    <nav className="max-w-custom-1200 mx-auto px-4 py-6 flex items-center justify-between">
+    <nav className="max-w-[1400px] mx-auto px-6 py-6 md:px-12 flex items-center justify-between">
       {/* Left: Navigation Links */}
-      <ul className="hidden md:flex flex-1 list-none items-center gap-6 text-text-dark font-medium">
-        <li>
-          <Link to="/" className="hover:text-primary transition-colors duration-200">
+      <ul className="hidden md:flex flex-1 list-none items-center gap-6 text-gray-900 font-medium">
+        <li className="hover:text-rose-500 duration-100">
+          <Link to="/" className="hover:text-rose-500 transition-colors duration-200">
             Home
           </Link>
         </li>
-        <li>
-          <Link to="/about" className="hover:text-primary transition-colors duration-200">
+        <li className="hover:text-rose-500 duration-100">
+          <Link to="/about" className="hover:text-rose-500 transition-colors duration-200">
             About
           </Link>
         </li>
-        <li>
-          <Link to="/shop" className="hover:text-primary transition-colors duration-200">
+        <li className="hover:text-rose-500 duration-100">
+          <Link to="/shop" className="hover:text-rose-500 transition-colors duration-200">
             Shop
           </Link>
         </li>
-        <li>
-          <Link to="/contact" className="hover:text-primary transition-colors duration-200">
+        <li className="hover:text-rose-500 duration-100">
+          <Link to="/contact" className="hover:text-rose-500 transition-colors duration-200">
             Contact
           </Link>
         </li>
@@ -35,36 +35,36 @@ const NavBar = () => {
       <div className="flex-1 text-center">
         <Link
           to="/"
-          className="text-2xl md:text-3xl font-bold text-primary tracking-tight"
+          className="text-xl md:text-2xl font-bold text-rose-500 tracking-tight"
         >
           Isabella Perfume
         </Link>
       </div>
 
       {/* Right: Icons */}
-      <div className="flex-1 flex justify-end items-center gap-4 md:gap-6 text-text-dark">
+      <div className="flex-1 flex justify-end items-center gap-4 md:gap-6 text-gray-900">
         <Link
           to="/search"
           aria-label="Search"
-          className="text-xl md:text-2xl transition-colors duration-200"
+          className="text-xl md:text-2xl hover:text-rose-500 transition-colors duration-200"
         >
           <IoSearch />
         </Link>
         <div className="relative">
           <button
             aria-label="Shopping Cart"
-            className="text-xl md:text-2xl hover:text-[#ed3849] transition-colors duration-200"
+            className="text-xl md:text-2xl hover:text-rose-500 transition-colors duration-200"
           >
             <PiShoppingCart />
           </button>
-          <span className="absolute -top-2 -right-2 text-xs font-semibold text-white bg-[#ed3849] rounded-full px-1.5 py-0.5">
+          <span className="absolute -top-2 -right-2 text-xs font-semibold text-white bg-rose-500 rounded-full px-1.5 py-0.5">
             0
           </span>
         </div>
         <Link
           to="/login"
           aria-label="User Login"
-          className="text-xl md:text-2xl hover:text-[#ed3849] transition-colors duration-200"
+          className="text-xl md:text-2xl hover:text-rose-500 transition-colors duration-200"
         >
           <FaRegCircleUser />
         </Link>
