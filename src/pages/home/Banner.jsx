@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Perfume1 from '../../assets/perfume1.png';
+import Perfume1 from '../../assets/Perfume1.png';
 
 const Banner = () => {
   return (
